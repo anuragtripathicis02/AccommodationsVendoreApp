@@ -8380,3 +8380,12 @@ ul.week-select-box .week.weekActive {
 
 
 }
+
+
+.filter-top-sec .btn-secondary:hover svg path {
+    stroke: none !important;
+}
+
+.operatorProfile-from .btn.btn-edit {
+    color: #3d3d3d;
+}

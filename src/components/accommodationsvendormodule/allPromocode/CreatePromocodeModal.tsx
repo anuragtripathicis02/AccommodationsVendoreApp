@@ -9,8 +9,9 @@ import CloseModal from "../../../../public/images/close-modal.png";
 // import MapLocation from './MapLocation';
 
 const CreatePromocodeModal = ({ show, handleClose }: any) => {
+    
   return (
-    <Modal show={show} onHide={handleClose} centered className="modal-filter common-modal-sec pt-4">
+    <Modal show={show} onHide={handleClose} centered  className="modal-filter common-modal-sec pt-4">
         <Modal.Header>
             <Button variant="close-btn" onClick={handleClose}>
                 <Image src={CloseModal} alt="" />
@@ -90,13 +91,13 @@ const CreatePromocodeModal = ({ show, handleClose }: any) => {
                             <div className='col-md-4'>
                                 <div className="form-group mb-1">
                                     <Form.Label>Valid From</Form.Label>
-                                    <DatePickers />
+                                    <DatePickers/>
                                 </div>
                             </div>
                             <div className='col-md-4 mb-0'>
                                 <div className="form-group mb-1">
                                     <Form.Label>Valid Through</Form.Label>
-                                    <DatePickers />
+                                    <DatePickers placement="topStart" />
                                 </div>
                             </div>
                             <div className='col-md-8 mb-0'>
